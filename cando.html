@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>YIZHEN</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="works.css">
+    <link href="js/zoomify/zoomify.min.css" rel="stylesheet">
+</head>
+<body>
+<a class="back-btn" href="index.html"></a>
+<div class="container">
+    <div class="hero-gif" style="background-image: url(images/cd-hero.png);"></div>
+    <div class="hero-image" style="background-image: url(images/bg-cando@2x.jpg);"></div>
+    <div class="content">
+        <div class="hero">
+            <h1 class="work-title">Cando</h1>
+            <h5 class="work-tag grey">2017</h5><h5 class="work-tag grey">UI</h5><h5 class="work-tag grey">Animation</h5>
+            <h5 class="work-intro">
+                This is an UI exercise of a desktop todo application. Through simulating the office desk in real-world,
+                I aimed to make simple interface for user to focus on their tasks, from "to do" to "can do".
+            </h5>
+        </div>
+
+        <h4 class="work-subtitle">UI Ideation</h4>
+        <p class="work-paragraph">Icons: Associating with objects on the desk, and crafting to the simplest figure.
+            <br>Colors: For people sitting long, use eye-protective greens as primary colors,
+            and a few gradients to decorate the plain interface.
+        </p>
+        <div class="work-images">
+            <div class="work-image full-slim" style="background-image: url(images/cd-1.jpg)")></div>
+        </div>
+
+        <h4 class="work-subtitle">Animation concepts</h4>
+        <p class="work-paragraph">
+            1. Accomplishment <br>
+            When user checks the task, the ticket disappears with a spring-curve animation to convey the happiness of accomplishment. I also used an animation to emphasize the 'Done' category on left navigation bar,
+            so user can easily find checked tickets there in case of wrong operation.
+        </p>
+        <video class="cd-video" width="640px" height="auto" autoplay="autoplay" loop>
+            <source src="images/cd-done.mp4" />
+        </video>
+
+        <p class="work-paragraph">
+            <br>2. Add a task<br>
+            The new ticket move in as a post-it on the desk. During editing, the pure background helps user focus on adding information.
+            When finish, an animation on left navigation bar is used to emphasize where the ticket goes.
+        </p>
+        <video class="cd-video" width="640px" height="auto" autoplay="autoplay" loop>
+            <source src="images/cd-create.mp4" />
+        </video>
+
+        <p class="work-paragraph">
+            <br>3. Focus on the task<br>
+            Hover is a good type of interaction on desktop, as it can save the effort of click. When user hovers on the left half of each ticket, a certain operations on this ticket can be done, including focus mode. The focus mode is like a lamp on your desk.
+            You put all the attention on one task and control the pace via countdown feature.
+        </p>
+        <video class="cd-video" width="640px" height="auto" autoplay="autoplay" loop>
+            <source src="images/cd-focus.mp4" />
+        </video>
+
+        <p class="work-paragraph">
+            <br><br>All the animations above were made in Framer.
+        </p>
+
+    </div>
+</div>
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/zoomify/zoomify.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

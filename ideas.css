@@ -1,0 +1,41 @@
+.back-btn {width: 60px; height: 60px; position: fixed; z-index: 10; left: calc(50% - 30px);
+    background-size: cover; background-image: url(images/close@3x.png);}
+
+.container {width: 48vw; margin-left: calc(50% - 24vw);
+    padding-top: 100px; padding-bottom: 50px;
+}
+
+header {margin-bottom: 80px;}
+header>h5 {margin-top: 20px;}
+.idea {
+    display: block;
+    box-shadow: 0 2px 6px rgba(162,162,162,0.6);
+    background-color: white; margin-bottom: 60px;
+}
+.idea-title {padding-top: 40px; padding-left: 30px; width: 70%;}
+.idea-paragraph {padding-top: 20px; padding-left: 30px; width: calc(100% - 60px);}
+.id-img {margin-top: 30px; margin-left: 30px;
+    width: calc(100% - 60px); height: 8vw; display: block; background-size: contain;
+    background-repeat: no-repeat;}
+.id-video {outline: none; margin-top: 40px; position: relative; bottom: 0;}
+
+@media screen and (max-width: 1080px) {
+    .container {
+        width: 70vw;
+        margin-left: 15vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .back-btn {
+        width: 44px;
+        height: 44px;
+        left: calc(50% - 22px);
+    }
+    .container {
+        width: calc(100% - 32px);
+        margin-left: 16px;
+    }
+    .idea-title {width: calc(100% - 32px);}
+    .idea-paragraph {width: calc(100% - 30px);}
+}

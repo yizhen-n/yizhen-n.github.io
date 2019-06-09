@@ -1,0 +1,51 @@
+* {  box-sizing: border-box;  padding:0;  margin:0;  font-size: 100%;  }
+body {  width:100%; margin:0px; padding:0px;}  img {border:none;}
+a:link {text-decoration:none; overflow-x: hidden;}
+a:visited { color:black; }
+
+/* Typography */
+
+/* ubuntu-700 - latin */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
+    url('fonts/ubuntu-v13-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/ubuntu-v13-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* crimson-text-regular - latin */
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Crimson Text Regular'), local('CrimsonText-Regular'),
+    url('fonts/crimson-text-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/crimson-text-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* crimson-text-italic - latin */
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Crimson Text Italic'), local('CrimsonText-Italic'),
+    url('fonts/crimson-text-v9-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/crimson-text-v9-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+h1 {font-family: 'Ubuntu', sans-serif; font-size: 2.5em; line-height: 1.2; font-weight: 700;}
+h2 {font-family: 'Ubuntu', sans-serif; font-size: 2em; line-height: 1.2; font-weight: 700;}
+h3 {font-family: 'Crimson Text', serif; font-size: 1.25em; line-height: 1.2; font-weight: 400;}
+h4 {font-family: 'Ubuntu', sans-serif; font-size: 1.25em; line-height: 1.2; font-weight: 700;}
+h5 {font-family: 'Ubuntu', sans-serif; font-size: 0.875em; line-height: 1.2; font-weight: 700;}
+p {font-family: 'Crimson Text', serif; font-size: 1em; line-height: 1.2; font-weight: 400;}
+a {color: black; outline: none;}
+
+
+/* Colors */
+.green {background-color: #00B377;}
+.grey {background-color: #2a2a2a;}
+.gradient1 {background: linear-gradient(#FFEDED, #E3D6FF);}
+.gradient2 {background: linear-gradient(#FFE9AC, #E2FFD6);}
+.gradient3 {background: linear-gradient(#D6FFFB, #B3CAF2);}

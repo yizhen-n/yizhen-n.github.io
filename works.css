@@ -1,0 +1,75 @@
+.container {padding: 15px 20px; width: 100vw; height: 100%;}
+.content {width: 66.66vw; position: absolute; left: 16.67%; padding-bottom: 80px;}
+
+
+.quote {font-family: 'Crimson Text', serif; font-style: italic; font-size: 1.375em; line-height: 2;
+    border-left: solid #00B377 4px; padding-left: 18px; margin-top: 20px; margin-bottom: 20px;}
+
+
+/* Components */
+.hero-image {width: 100%; background-size: cover; background-position: center; height: 400px;}
+.hero-gif {position: absolute; right: 0; width: 60%; height: 400px;
+    background-size: contain; background-position: bottom;
+    background-repeat: no-repeat;}
+
+.back-btn {width: 60px; height: 60px; position: fixed; z-index: 10; left: calc(50% - 30px);
+    background-size: cover; background-image: url(images/close@3x.png);}
+
+.work-title { color: #2a2a2a; margin-top: 80px;}
+.work-tag { padding: 3px 8px; color: white; display: inline-block;
+    margin-right: 6px;}
+.work-intro {width: 75%; margin-top: 50px; line-height: 1.6;}
+.work-subtitle {margin-top: 60px;}
+.work-paragraph {margin-top: 10px; line-height: 1.6;}
+
+.work-images {
+    width: calc(100% + 10px); margin-left: -5px; margin-top: 30px;
+    display: flex; flex-direction: row; flex-wrap: wrap; align-content: flex-start; }
+.half {width: 50%; height: 23vw;}
+.full {width: 100%; height: 39vw; background-position: center;}
+.full-slim {width: 100%; height: 26vw;}
+.work-image {
+    display: inline-block; background-size: contain; background-repeat: no-repeat;
+border: solid white 5px;}
+.work-images > img {width: 100%; height: auto; background-size: contain;}
+
+.work-video {
+    outline: none; margin-top: 30px;
+}
+.cd-video {
+    outline: none; margin-top: 30px;
+    box-shadow: 0 2px 20px rgba(162,162,162,0.3);
+    margin-left: calc(50% - 320px);
+}
+
+.if-container {
+    width: 360px; height: 641px; margin-left: calc(50% - 162px);
+    margin-top: -40px;
+}
+
+.if-container iframe {
+    width: 375px;
+    height: 667px;
+    margin-left: -25px;
+    -webkit-transform:scale(0.8);
+    -moz-transform:scale(0.8);
+    -o-transform:scale(0.8);
+    -ms-transform:scale(0.8);
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .work-intro {width: 100%;}
+    .cd-video {width: 100%; margin-left: 0;}
+}
+
+@media screen and (max-width: 600px) {
+    .back-btn {width: 44px; height: 44px; left: calc(50% - 22px);}
+    .content {width: 90%; left: 5%;}
+    .half {width: 100%; height: 60vw;}
+    .full {height: 60vw;}
+    .full-slim {height: 40vw;}
+    .quote {font-size: 1em;}
+    .hero-gif {width: 120%; right: -15vw;}
+}
