@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>YIZHEN</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="works.css">
+    <link href="js/zoomify/zoomify.min.css" rel="stylesheet">
+</head>
+<body>
+<a class="back-btn" href="index.html"></a>
+<div class="container">
+    <div class="hero-gif" style="background-image: url(images/cd-hero.png);"></div>
+    <div class="hero-image" style="background-image: url(images/bg-cando@2x.jpg);"></div>
+    <div class="content">
+        <div class="hero">
+            <h1 class="work-title">Cando</h1>
+            <h5 class="work-tag grey">2017</h5><h5 class="work-tag grey">UI</h5><h5 class="work-tag grey">动画</h5>
+            <h5 class="work-intro">
+                设计桌面端待办清单的UI练习。通过对真实世界办公桌的模拟，制作简洁易懂的界面，让使用者专注于任务，
+                从To do到Can do。
+            </h5>
+        </div>
+
+        <h4 class="work-subtitle">界面元素构思</h4>
+        <p class="work-paragraph">图标：发散联想，使用桌上常见物品，草图迭代至最简形态。
+            <br>色彩：用户伏案已久，主色使用护眼的绿色系。少量渐变色点缀，避免死板。
+        </p>
+        <div class="work-images">
+            <div class="work-image full-slim" style="background-image: url(images/cd-1.jpg)")></div>
+        </div>
+
+        <h4 class="work-subtitle">动效思考</h4>
+        <p class="work-paragraph">
+            1. 完成感 <br>
+            在用户完成任务时，Ticket使用Spring动画消失，给予清除的快感。
+            并用动画强调左侧的Done类别，表示被清除的任务将去往这里，让用户在误操作后能够找回。
+        </p>
+        <video class="cd-video" width="640px" height="auto" autoplay="autoplay" controls="controls" loop >
+            <source src="images/cd-done.mp4" />
+        </video>
+
+        <p class="work-paragraph">
+            <br>2. 添加待办事项<br>
+            模拟桌面便签从右下角抽出。在编辑任务信息时隐去背景，有助用户专注快速地添加。添加完成后同样在左侧栏强调Ticket将去往的类别。
+        </p>
+        <video class="cd-video" width="640px" height="auto" autoplay="autoplay" controls="controls" loop>
+            <source src="images/cd-create.mp4" />
+        </video>
+
+        <p class="work-paragraph">
+            <br>3. 专注任务<br>
+            在桌面端，hover可以省略点击动作，是非常简便的交互方式。当用户Hover于任务左侧，
+            即可对此任务进行具体操作，包括进入专注模式。此模式犹如打开一盏台灯，
+            让用户可以专注在一个任务中，并用倒计时控制节奏。
+        </p>
+        <video class="cd-video" width="640px" height="auto" autoplay="autoplay" controls="controls" loop>
+            <source src="images/cd-focus.mp4" />
+        </video>
+
+        <p class="work-paragraph">
+            <br><br>以上动效在Framer 中制作。
+        </p>
+
+    </div>
+</div>
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/zoomify/zoomify.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
